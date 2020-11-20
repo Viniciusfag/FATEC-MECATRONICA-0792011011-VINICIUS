@@ -91,30 +91,30 @@ if tipo == "Drama":
   genero = Drama
   classificacao()
 
-if tipo == "Comedia":
+if tipo == "comedia":
   genero = Comedia
   classificacao()
 
-if tipo == "Terror":
+if tipo == "terror":
   genero = Terror
   classificacao()
 
-if tipo == "Açao":
+if tipo == "açao":
   genero = Açao
   classificacao()
 
-if tipo == "Animaçao":
+if tipo == "animaçao":
   genero = Animaçao
   classificacao()
 
-if tipo == "Ficçao Cientifica":
+if tipo == "ficçao cientifica":
   genero = Ficçao_Cientifica
   classificacao()
 
-if tipo == "Romance":
+if tipo == "romance":
   genero = Romance
   classificacao()
 
-if tipo == "Suspense":
+if tipo == "suspense":
   genero = Suspense
   classificacao()
