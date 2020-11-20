@@ -1,0 +1,34 @@
+# A very simple Flask Hello World app for you to get started with...
+
+from flask import Flask
+
+app = Flask(name)
+
+@app.route('/pagina')
+def primeira_pagina():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Filmes que combina com sua idade</title>
+        </head>
+        <body>
+            <h1>Filmes que combina com sua idade</h1>
+            <p>Informe seu nome<p>
+                <fieldset id="nome"><legend>Nome</legend>
+                <p>Nome:<input type="text" name="tNome" id="cNome" size="25" maxlength="30"/></p>
+            <p>Informe sua idade<p>
+                <fieldset id="idade"><legend>Idade</legend>
+                <p>Idade:<input type="text" name="tIdade" id="cIdade" size="2" maxlength="2"/></p>
+            <p>Qual o seu genero favorito?</p>
+                <fieldset id="genero"><legend>Genêro</legend>
+                    <input type="radio" name="tGenêro" id="cAção" checked/> <label for="cAção">Ação</label>
+                    <input type="radio" name="tGenêro" id="cAnimação" checked/> <label for="cAnimação">Animação</label>
+                    <input type="radio" name="tGenêro" id="cComédia" checked/> <label for="cComédia">Comédia</label>
+                    <input type="radio" name="tGenêro" id="cDrama" checked/> <label for="cDrama">Drama</label>
+                    <input type="radio" name="tGenêro" id="cFicção Cientifica" checked/> <label for="cFicção Cientifica">Ficcção Cientifica</label>
+                    <input type="radio" name="tGenêro" id="cRomance" checked/> <label for="cRomance">Romance</label>
+                    <input type="radio" name="tGenêro" id="cSuspense" checked/> <label for="cSuspense">Suspense</label>
+        </body>
+    </html>
+    """
