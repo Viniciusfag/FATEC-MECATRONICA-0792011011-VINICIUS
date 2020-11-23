@@ -118,3 +118,6 @@ if tipo == "romance":
 if tipo == "suspense":
   genero = Suspense
   classificacao()
+ 
+#http://www.w3schools.com/colors/colors_names.asp site mudar cor
+  
