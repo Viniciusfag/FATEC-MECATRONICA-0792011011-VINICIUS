@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opções de Filmes</title>
+    </head>
+    <body leftmargin="60">
+        <h1>Filmes de Terror classificação 16:</h1>
+        <img src="{{ url_for('static', filename='hora_do_pesadelo.png') }}">
+        <img src="{{ url_for('static', filename='it_a_coisa.png') }}">
+        <img src="{{ url_for('static', filename='predadores_assassinos.png') }}">
+        <img src="{{ url_for('static', filename='60_min_para_morrer.png') }}">
+    </body>
+</html>
