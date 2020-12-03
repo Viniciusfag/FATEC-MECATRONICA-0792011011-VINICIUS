@@ -1,0 +1,242 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def primeira_pagina():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>DECIDA QUAL FILME ASSISTIR</h1>
+            <a href="http://vinicius897.pythonanywhere.com/"><h3>Home</h3></a>
+            <h2>Gêneros de Filmes por Classificação Indicativa</h2>
+            <p>Neste site será mostrado uma lista de filmes indicados para você assistir com base no gênero e a classificação indicativa escolhida .</p>
+            <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/idadeacao"><li>Ação</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadeanimacao"><li>Animação</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadecomedia"><li>Comédia</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadedrama"><li>Drama</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadeficcaocientifica"><li>Ficção Cientifica</li>
+                 <a href="http://vinicius897.pythonanywhere.com/idaderomance"><li>Romance</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadesuspense"><li>Suspense</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/idadeterror"><li>Terror</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+
+@app.route('/idadedrama')
+def idade_drama():
+    return render_template('idadedrama.html')
+
+
+@app.route('/idadeterror')
+def idade_terror():
+    return render_template('idadeterror.html')
+
+
+@app.route('/idadecomedia')
+def idade_comedia():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+@app.route('/idadeacao')
+def idade_açao():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/acao"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+@app.route('/idadesuspense')
+def idade_suspense():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+@app.route('/idadeanimacao')
+def idade_animaçao():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+@app.route('/idadeficcaocientifica')
+def idade_ficçao_cientifica():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+@app.route('/idaderomance')
+def idade_romance():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Classificação Indicativa</h1>
+            <p>Escolha a classificação indicativa que você deseja que os filmes sejam exibidos</p>
+             <ul>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>18</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>16</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>14</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>12</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>10</li></a>
+                 <a href="http://vinicius897.pythonanywhere.com/teste3"><li>Livre</li></a>
+            </ul>
+        </body>
+    </html>
+    """
+
+
+@app.route('/drama18')
+def drama18():
+    return render_template('drama18.html')
+
+@app.route('/drama16')
+def drama16():
+    return render_template('drama16.html')
+
+@app.route('/drama14')
+def drama14():
+    return render_template('drama14.html')
+
+@app.route('/drama12')
+def drama12():
+    return render_template('drama12.html')
+
+@app.route('/drama10')
+def drama10():
+    return render_template('drama10.html')
+
+@app.route('/dramalivre')
+def dramalivre():
+    return render_template('dramalivre.html')
+
+
+@app.route('/terror18')
+def terror18():
+    return render_template('terror18.html')
+
+@app.route('/terror16')
+def terror16():
+    return render_template('terror16.html')
+
+@app.route('/terror14')
+def terror14():
+    return render_template('terror14.html')
+
+@app.route('/terror12')
+def terror12():
+    return render_template('terror12.html')
+
+@app.route('/terror10')
+def terror10():
+    return render_template('terror10.html')
+
+@app.route('/terrorlivre')
+def terrorlivre():
+    return render_template('terrorlivre.html')
+
+@app.route('/acao')
+def ação():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Opções de Filmes</title>
+        </head>
+        <body leftmargin="60">
+            <h1>Filmes de Ação</h1>
+        </body>
+    </html>
